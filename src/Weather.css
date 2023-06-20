@@ -2,44 +2,103 @@ li {
     list-style-type: none;
 }
 
+#searchBar {
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #city-input {
-    margin-top: 20px;
-    float:right;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-right: 0;
     color: rgb(240, 248, 255, 0.8);
     height: 40px;
-    width: 90%;
-    border-radius: 5px;
+    border-radius: 20px 0 0 20px;
     background: rgba(86, 95, 123, 0.5);
     border-style: groove;
     border-color: rgb(240, 248, 255, 0.25);
   }
   
-  input::placeholder {
-    margin: 10px;
-    color: rgb(240, 248, 255, 0.5);
+  #city-input::placeholder {
+    color: rgb(240, 248, 255, 0.75);
+    font-size: 12px;
+    opacity: 0.5;
   }
   
   #city-input:focus {
     box-shadow: none;
   }
   
-  .glass-button {
-    margin-top: 20px;
-    float: left;
-    width: 90%;
-    border: 0;
+  .glass-button-icon {
+    margin-bottom: 30px;
+    height: 40px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0 20px 20px 0px;
     background-color: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgb(240, 248, 255, 0.25);
+    border-left: none;
     backdrop-filter: blur(30px);
     color: rgba(255,255,255,0.8);
-    font-size: 14px;
+    font-size: 10px;
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0 20px 0 20px;
   }
   
   .glass-button:hover {
     background-color: rgba(255,255,255,0.2);
   }
+
+  ul {
+    padding: 0;
+  }
+
+  h1 {
+    color: #d5e3e0;
+  }
+  .weather-conditions, .location-time {
+    color: #8f9c9b;
+  }
+
+.weather-icon{
+  display: block; 
+  margin: 0 auto;
+  width: 100px;
+}
+
+.current-temp{
+  font-size: 32px;
+  color: #d5e3e0;
+  text-align: right;
+}
+
+.min-temp {
+  color: #9bccc7;
+}
+
+.max-temp {
+  color: #f2ad63;
+}
+
+.max-temp, .min-temp {
+  text-align: left;
+}
+
+.location-time {
+  font-size: 20px;
+}
+
+.weather-conditions {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px){
+  .location-time, .weather-conditions, h1 {text-align: center;}
+}

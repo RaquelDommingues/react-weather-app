@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: #8f9c9b;
+}
+
+#git-hub-link {
+    text-align: center;
+}
+
+a:hover {
+    color: orange;
+}
+
+@media only screen and (max-width: 768px){
+  #git-hub-link {font-size: 10px;}
+}

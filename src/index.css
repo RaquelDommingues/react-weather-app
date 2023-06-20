@@ -1,15 +1,16 @@
 body {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  color: aliceblue;
+  color: #8f9c9b;
   font-family: "Comfortaa", cursive;
-  text-align: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0;
 }
 
 .container {
   padding: 20px;
-    margin-top: 60px;
-    box-shadow: 0 0 5px 3px rgb(240, 248, 255, 0.25);
-    border-radius: 30px;
+  width: 50%;
+  margin-top: 60px;
+  box-shadow: 0 0 5px 3px rgb(240, 248, 255, 0.25);
+  border-radius: 30px;
 }
