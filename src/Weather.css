@@ -77,6 +77,7 @@ li {
   font-size: 32px;
   color: #d5e3e0;
   text-align: right;
+  margin-top: 30px;
 }
 
 .min-temp {
@@ -85,6 +86,7 @@ li {
 
 .max-temp {
   color: #f2ad63;
+  margin-top: 30px;
 }
 
 .max-temp, .min-temp {
@@ -99,6 +101,15 @@ li {
   font-size: 14px;
 }
 
+.units {
+  font-size: 10px;
+}
+
+.current-units{
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+}
 @media only screen and (max-width: 768px){
   .location-time, .weather-conditions, h1 {text-align: center;}
 }
