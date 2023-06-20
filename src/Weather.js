@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 import { FaSearch } from 'react-icons/fa';
 import sun from './img/sun.png';
 
@@ -11,7 +12,7 @@ export default function Weather() {
         setWeatherData({
             ready: true,
             temperature: response.data.temperature.current,
-            date: "Wednesday 07:00",
+            date: new Date(response.data.time * 1000),
             wind: response.data.wind.speed,
             humidity: response.data.temperature.humidity,
             condition: response.data.condition.description,
@@ -42,7 +43,8 @@ export default function Weather() {
                         <div className="col-md-6">
                             <ul>
                                 <li className="location-time"><h1>{weatherData.city}</h1></li>
-                                <li className="location-time">{weatherData.date}</li>
+                                <li className="location-time">
+                                    <FormattedDate date={weatherData.date}/></li>
                                 <br />
                                 <li className="weather-conditions text-capitalize">{weatherData.condition}</li>
                                 <li className="weather-conditions">Humidity: {weatherData.humidity}%</li>
