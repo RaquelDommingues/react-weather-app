@@ -60,7 +60,9 @@ li {
     padding: 0;
   }
 
-  h1 {
+  .city {
+    font-size: 40px;
+    margin-top: 10px;
     color: #d5e3e0;
   }
   .weather-conditions, .location-time {
@@ -68,16 +70,19 @@ li {
   }
 
 .weather-icon{
-  display: block; 
+  display: block;
   margin: 0 auto;
-  width: 100px;
+  margin-top: 40px;
+  width: 200px;
 }
 
 .current-temp{
-  font-size: 32px;
+  position: relative;
+  top: -30px;
+  font-size: 150px;
   color: #d5e3e0;
-  text-align: right;
-  margin-top: 30px;
+  text-align: left;
+
 }
 
 .min-temp {
@@ -98,18 +103,31 @@ li {
 }
 
 .weather-conditions {
-  font-size: 14px;
-}
-
-.units {
-  font-size: 10px;
-}
-
-.current-units{
-  font-size: 20px;
   position: relative;
-  top: -10px;
+  top: 10px;
+  font-size: 15px;
+  text-align: center;
 }
-@media only screen and (max-width: 768px){
-  .location-time, .weather-conditions, h1 {text-align: center;}
+
+.weather-icon-conditions {
+  font-size: 30px;
+  color: #d5e3e0;
+}
+.current-units{
+  font-size: 30px;
+  position: relative;
+  top: -55px;
+}
+
+.conditions {
+  margin-top: 20px;
+}
+
+.date {
+  font-size: 20px;
+}
+@media only screen and (max-width: 990px){
+  .location-time, .weather-conditions, .weather-icon-conditions, .city, .current-temp {text-align: center;}
+  .weather-icon {position: relative; top: -70px; margin-top: 0}
+  .weather-conditions {position: relative; top: -50px;}
 }
