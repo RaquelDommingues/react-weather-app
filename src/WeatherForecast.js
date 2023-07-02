@@ -1,6 +1,4 @@
 import React from "react";
-import WeatherInfo from "./WeatherInfo";
-import "./Weather.css";
 import "./WeatherForecast.css";
 
 export default function WeatherForecast(props) {
