@@ -15,10 +15,10 @@ export default function WeatherInfo(props) {
                             <FormattedDate date={props.data.date} />
                         </li>
                     </ul>
-                    <WeatherTemperature celsius={props.data.temperature}/>
+                    <img className="weather-icon" src={props.data.iconUrl} alt="weather-icon" />
                 </div>
                 <div className="col-lg-6 col-12">
-                    <img className="weather-icon" src={props.data.iconUrl} alt="weather-icon" />
+                    <WeatherTemperature celsius={props.data.temperature}/>
                     <div className="weather-conditions">
                         <ul>
                             <li >Humidity: {props.data.humidity}%</li>

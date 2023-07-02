@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from './WeatherInfo';
+import WeatherForecast from './WeatherForecast';
 import { FaSearch } from 'react-icons/fa';
 
 
@@ -57,6 +58,8 @@ export default function Weather(props) {
                         </button>
                     </form>
                     <WeatherInfo data={weatherData}/>
+                    <hr />
+                    <WeatherForecast />
                 </div>
             </div>  
         );
